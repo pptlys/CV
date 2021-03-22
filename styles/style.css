@@ -1,158 +1,158 @@
 /* || General setup */
 
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    font-size: 10px;
-    background-color: #a9a9a9;
-  }
-  
-  body {
-    width: 70%;
-    min-width: 800px;
-    margin: 0 auto;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: hsl(0, 0%, 80%);
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
 /* || typography */
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-    color: #2a2a2a;
-  }
-  
-  p, input, li {
-    font-family: 'Playfair Display', serif;
-    color: #2a2a2a;
-  }
-  
-  h1 {
-    font-size: 2.3rem;
-    text-align: left;
-    text-shadow: 2px 2px 10px black;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    text-align: left;
-  }
-  
-  h3, dt {
-    font-size: 1.8rem;
-  }
-  
-  p, li, dd {
-    font-size: 1.6rem;
-    line-height: 1.5;
-  }
-  
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+p, input, li, dt, dd {
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: left;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+h3, dt {
+  font-size: 1.3rem;
+}
+
+p, li, dd {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
 /* || header layout */
 
 header {
-    margin-bottom: 10px;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  
-  body > * {
-    /* background-color: red; */
-    padding: 1%;
-  }
-  
-  main, header, nav, aside, footer, section {
-    background-color: hsla(120, 2%, 55%, 0.5);
-    padding: 1%;
-  }
-  
-  h1 {
-    flex: 5;
-  }
-  
-  
-  nav {
-    flex: 100%;
-    display: flex;
-  }
-  
-  nav ul {
-    padding: 0;
-    list-style-type: none;
-    flex: 2;
-    display: flex;
-  }
-  
-  nav li {
-    display: inline;
-    text-align: center;
-    flex: 1;
-  }
-  
-  nav a, nav span {
-    display: inline-block;
-    font-size: 2rem;
-    height: 3rem;
-    line-height: 1.7;
-    text-decoration: none;
-    color: black;
-  
-  }
+  display: flex;
+  flex-flow: row wrap;
+}
 
-  /* || main layout */
+body > * {
+  padding: 0 1% 1%;
+}
+
+main, header, nav, aside, footer, section {
+  background-color: hsla(120, 2%, 55%, 0.5);
+}
+
+h1 {
+  flex: 5;
+}
+
+
+nav {
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+/* || main layout */
 
 main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  
-  article, section {
-    flex: 4;
-  }
-  
-  aside {
-    flex: 1;
-    width: 30%;
-    margin-left: 15px;
-    padding: 1%;
-    float: right;
-  }
-  
-  
-  footer {
-    margin-top: 10px;
-  }  
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
 
-  /*Detail ajustments  */
+article, section {
+  flex: 4;
+}
 
-  .myIcon {
-      display: block;
-      height: 30px;
-  }
-  
-  .myHeadShot {
+aside {
+  flex: 1;
+  width: 40%;
+  margin-left: 15px;
+  padding: 1%;
+  float: right;
+}
+
+
+footer {
+  margin-bottom: 20px;
+}  
+
+/*Detail ajustments  */
+
+.myIcon {
     display: block;
-    height: 120px;
-    /* padding-top: 30px; */
-    padding-right: 20px;
-  }
+    margin: 0 auto;
+    height: 20px;
+}
 
-  .myHeading {
-      text-transform: uppercase;
-  }
+.myHeadShot {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  height: 100px;
+  padding-right: 20px;
+}
 
-  .mySkill {
-      border: transparent;
-  }
+.myHeading {
+    text-transform: uppercase;
+}
 
-  .myTime {
-      font-size: 1.3em;
-      font-style: italic;
-  }
+.mySkill {
+  background-color:#a9a9a9;
+  border-radius: 50%;
+}
 
-  .myTitle {
-      display: flex;
-      align-items: flex-start;
-      line-height: 1.5;
-  }
+.myTime {
+    font-size: 1.0em;
+    font-style: italic;
+}
+
+.myTitle {
+    display: flex;
+    align-items: flex-end;
+    line-height: 1.5;
+}
+
+aside dt,dd{
+  line-height: 1.5;
+}
+
+footer li{
+  background-color: #a9a9a9;
+  border-radius: 50%;
+}
+
