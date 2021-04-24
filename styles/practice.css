@@ -161,3 +161,18 @@ body {
   .mySkill {
       font-size: 1.3rem;
   }
+
+  .myButton {
+      background: inherit;
+      border: transparent;
+      align-self: flex-start;
+  }
+
+  .buttonImg {
+      background: inherit;
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      height: 50px;
+  }
+  

@@ -1,0 +1,158 @@
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-color: hsl(0, 0%, 80%);
+}
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+p, input, li, dt, dd {
+  font-family: 'Playfair Display', serif;
+  color: black;
+}
+
+h1 {
+  font-size: 1.8rem;
+  text-align: left;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+h3, dt {
+  font-size: 1.3rem;
+}
+
+p, li, dd {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* || header layout */
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+body > * {
+  padding: 0 1% 1%;
+}
+
+main, header, nav, aside, footer, section {
+  background-color: hsla(120, 2%, 55%, 0.5);
+}
+
+h1 {
+  flex: 5;
+}
+
+
+nav {
+  flex: 100%;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+article, section {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  width: 40%;
+  margin-left: 15px;
+  padding: 1%;
+  float: right;
+}
+
+
+footer {
+  margin-bottom: 20px;
+}  
+
+/*Detail ajustments  */
+
+.myIcon {
+    display: block;
+    margin: 0 auto;
+    height: 20px;
+}
+
+.myHeadShot {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  height: 100px;
+  padding-right: 20px;
+}
+
+.myHeading {
+    text-transform: uppercase;
+}
+
+.mySkill {
+  background-color:#a9a9a9;
+  border-radius: 50%;
+}
+
+.myTime {
+    font-size: 1.0em;
+    font-style: italic;
+}
+
+.myTitle {
+    display: flex;
+    align-items: flex-end;
+    line-height: 1.5;
+}
+
+aside dt,dd{
+  line-height: 1.5;
+}
+
+footer li{
+  background-color: #a9a9a9;
+  border-radius: 50%;
+}
+
